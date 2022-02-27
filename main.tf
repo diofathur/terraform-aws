@@ -1,7 +1,7 @@
 # provider "aws" {
-#   access_key = "AKIA6OZCLERHTR5ZWRDJ"
-#   secret_key = "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"
-#   region     = "ap-southeast-1"
+#   access_key = "ACCESS_KEY"
+#   secret_key = "SECRET_KEY"
+#   region     = "REGION"
 # }
 
 # // create vpc
@@ -39,7 +39,7 @@
 # resource "aws_subnet" "subnet-1" {
 #   vpc_id            = aws_vpc.first-vpc.id
 #   cidr_block        = "10.0.1.0/24"
-#   availability_zone = "ap-southeast-1a"
+#   availability_zone = "A-Z"
 
 #   tags = {
 #     Name = "coba-subnet"
@@ -111,10 +111,10 @@
 
 # // create instance
 # resource "aws_instance" "web-server-instance" {
-#   ami               = "ami-055d15d9cfddf7bd3"
+#   ami               = "AMI-Images"
 #   instance_type     = "t2.micro"
-#   availability_zone = "ap-southeast-1a"
-#   key_name          = "new-keypair"
+#   availability_zone = "A-Z"
+#   key_name          = "KEY Pair"
 
 #   network_interface {
 #     device_index         = 0
