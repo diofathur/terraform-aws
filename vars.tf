@@ -1,7 +1,7 @@
 # Variable for AWS_Region
-variable "AWS_REGION" {
-  default = "ap-southeast-1"
-}
+# variable "AWS_REGION" {
+#   default = "ap-southeast-1"
+# }
 
 # Variable for CIDR VPC
 variable "cidr" {
@@ -10,12 +10,12 @@ variable "cidr" {
 
 # Variable for CIDR Subnet public, private, staging
 variable "subnet" {
-    type = list
-    default = ["10.11.11.0/24","10.11.12.0/24","10.11.13.0/24"]
+  type    = list(any)
+  default = ["10.11.11.0/24", "10.11.12.0/24", "10.11.13.0/24"]
 }
 
 # Variable for Availability Zone
 variable "az" {
-    type = list
-    default = ["ap-southeast-1a","ap-southeast-1b","ap-southeast-1c"]
+  type    = list(any)
+  default = ["ap-southeast-1a", "ap-southeast-1b", "ap-southeast-1c"]
 }
